@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Wedden App</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Race Wedden</h1>
+        <div id="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- Voeg dit toe binnen de <div id="app"> -->
+        <div id="betting-container">
+            <h2>Plaats je weddenschap</h2>
+                <input type="text" id="bet-input" placeholder="Naam van de deelnemer">
+                <button onclick="placeBet()">Plaats Weddenschap</button>
+        </div>
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
